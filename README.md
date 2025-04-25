@@ -35,8 +35,12 @@ Once you finish the assignment, submit a URL link to your repository or your pul
   - Names are their own object and have a `firstName`, `lastName`, `middleName` and `salutation`.
   - Names should be embedded within the `Contact` entity and not be stored in a separate table.
 
-3. List 3 tasks that can be accomplished with native SQL that you cannot do with JPQL. Explain why you would choose to use native SQL over JPQL for these specific tasks.
+3. List 3 tasks that can be accomplished with native SQL that you cannot do with JPQL. Explain why you would choose to use native SQL over JPQL for these specific tasks. <br><br>
+Tareas que no se pueden ejecutar con JPQL  son las tareas de modificación de estructuras de la base de datos, crear una tabla, alterar una columna, agregar un índice. <br>
+JPQL está diseñado para consultar y manipular datos: operaciones DML <br>
+SQL nativo permite definir o modificar estrucruas de la BBDD: operaciones DDL <br>
 
+Por lo tanto CREATE, ALTER o CREATE INDEX tendrán que ser usadas con SQL nativo
 <br>
 
 ## FAQs
