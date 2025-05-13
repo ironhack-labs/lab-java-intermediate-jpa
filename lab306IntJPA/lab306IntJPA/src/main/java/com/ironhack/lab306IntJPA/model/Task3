@@ -1,0 +1,20 @@
+List 3 tasks that can be accomplished with native SQL that you cannot do with JPQL.
+
+1) Obtain the number of tasks by status (finished/unfinished) using GROUP BY.
+
+2) Obtain the number of tasks by task type (BillableTask or InternalTask) using GROUP BY.
+
+3) Perform a JOIN with a table that is not mapped as an Entity.
+    For example, joining the Task table with an external table that is not represented as a JPA entity.
+
+
+
+Explain why you would choose to use native SQL
+over JPQL for these specific tasks
+
+Explain why you would choose to use native SQL over JPQL for these specific tasks
+
+Because none of these tasks can be accomplished with JPQL.
+JPQL works directly with entities and not with the underlying database tables.
+Therefore, it does not support queries involving unmapped tables or
+certain advanced SQL features such as database-specific functions or complex aggregations.
