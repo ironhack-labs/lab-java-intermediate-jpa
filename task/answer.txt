@@ -1,0 +1,22 @@
+Task Management & PR Company - Spring JPA Project
+
+Overview
+This project demonstrates how to model entity relationships using Spring Data JPA.
+It covers:
+
+1. Task Management System with inheritance (Task, BillableTask, InternalTask)
+2. PR Company Contact System with embedded Name object
+3. Native SQL vs JPQL explanation and examples
+
+---
+
+Part 1: Task Management System
+
+Entities:
+- Task: Base entity with `id`, `title`, `dueDate`, `status`
+- BillableTask: Inherits Task and adds `hourlyRate`
+- InternalTask: Inherits Task with no extra fields
+
+Inheritance Strategy:
+```java
+@Inheritance(strategy = InheritanceType.JOINED)
