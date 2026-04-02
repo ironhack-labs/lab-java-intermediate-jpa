@@ -1,13 +1,13 @@
 package com.ironhack.demo;
 
-public class Names {
+public class Name {
     private String firstName;
     private String lastName;
     private String middleName;
     private String salutation;
 
-    public Names(){}
-    public Names(String firstName, String lastName, String middleName, String salutation) {
+    public Name(){}
+    public Name(String firstName, String lastName, String middleName, String salutation) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;

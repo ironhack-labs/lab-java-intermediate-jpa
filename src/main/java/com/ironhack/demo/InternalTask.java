@@ -1,4 +1,8 @@
 package com.ironhack.demo;
 
-public class InternalTask {
+import jakarta.persistence.Entity;
+
+@Entity
+public class InternalTask extends Task {
+
 }
