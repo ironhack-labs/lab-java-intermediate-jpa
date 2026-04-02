@@ -2,6 +2,9 @@ package com.ironhack.jpa.labintermediate.entities;
 
 import jakarta.persistence.Embeddable;
 
+// It is embeddable class.
+// It does not create a new table in DataBase.
+// Entity will take fields from this class and if it needs, fields can be renamed.
 @Embeddable
 public class Name {
     private String firstName;

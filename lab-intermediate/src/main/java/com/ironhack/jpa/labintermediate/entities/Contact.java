@@ -2,6 +2,7 @@ package com.ironhack.jpa.labintermediate.entities;
 
 import jakarta.persistence.*;
 
+// Creating contacts table which takes fields from Embeddable class Name.
 @Entity
 @Table(name = "contacts")
 public class Contact{
@@ -12,7 +13,7 @@ public class Contact{
     private String title;
     @Column(length = 50, nullable = false)
     private String company;
-
+//  Using fields from embeddable class Name and rename them.
     @AttributeOverrides({
         @AttributeOverride(name="firstName", column = @Column(name = "first_name")),
         @AttributeOverride(name="lastName", column = @Column(name = "last_Name")),

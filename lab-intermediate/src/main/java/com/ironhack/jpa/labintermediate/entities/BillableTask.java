@@ -4,6 +4,8 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
+// Here is additional field hourlyRate.
+// Other fields will be taken from Task entity.
 @Entity
 @Table(name="billable_tasks")
 public class BillableTask extends Task{

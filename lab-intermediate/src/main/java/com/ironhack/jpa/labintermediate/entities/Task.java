@@ -4,8 +4,10 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
+// InternalTask and BillableTask will take fields from this entity.
 @Entity
 @Table(name="tasks")
+// Using JOINED Inheritance strategy for this entity.
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Task {
     @Id
