@@ -1,0 +1,6 @@
+Task 3
+We use sql when following conditions:
+
+1. Using database-specific features (window functions, CTEs)
+2. Bulk updates/deletes with joins
+3. Working with database-specific objects (indexes, hints, JSON, arrays)
